@@ -2,10 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Web Developer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- The header introduces you and links to the main parts of the page. -->
+  <header class="site-header">
+    <nav class="navigation">
+      <a class="logo" href="#top">YN<span>_</span></a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero" id="top">
+      <p class="eyebrow">WEB DEVELOPMENT STUDENT / BUILDER</p>
+      <h1>Designing useful ideas<br><span>one line of code at a time.</span></h1>
+      <p class="intro">I am Your Name, an aspiring web developer who enjoys turning curious questions into clear, thoughtful websites.</p>
+      <a class="button" href="#projects">See my work</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Replace this text with your own story as you learn. -->
+    <section class="section about-section" id="about">
+      <p class="section-label">01 / BIO</p>
+      <div class="section-heading">
+        <h2>Curious mind.<br>Practical maker.</h2>
+        <p>I am studying web development and building a foundation in HTML, CSS, and JavaScript. I like the careful thinking of engineering and the expressive energy of art, so I bring both into each project.</p>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <p class="section-label">02 / PROJECT LOG</p>
+      <h2>Things I am building</h2>
+      <div class="project-list">
+        <article class="project-card project-blue">
+          <p class="project-number">PROJECT 01</p>
+          <h3>Project name</h3>
+          <p>A short description of what you built and the problem it solves.</p>
+          <a href="#contact">Coming soon &rarr;</a>
+        </article>
+        <article class="project-card project-yellow">
+          <p class="project-number">PROJECT 02</p>
+          <h3>Project name</h3>
+          <p>A short description of the tools, ideas, or skills you practiced.</p>
+          <a href="#contact">Coming soon &rarr;</a>
+        </article>
+        <article class="project-card project-red">
+          <p class="project-number">PROJECT 03</p>
+          <h3>Project name</h3>
+          <p>A short description of what you would like to create next.</p>
+          <a href="#contact">Coming soon &rarr;</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <p class="section-label">03 / TOOLBOX</p>
+      <h2>Skills in progress</h2>
+      <p class="section-note">A growing set of tools I use to move an idea from sketch to screen.</p>
+      <ul class="skills-list">
+        <li>HTML &amp; semantic structure</li>
+        <li>CSS &amp; responsive design</li>
+        <li>JavaScript fundamentals</li>
+        <li>Accessibility basics</li>
+        <li>Git &amp; GitHub</li>
+      </ul>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <p class="section-label">04 / CONTACT</p>
+      <h2>Let's connect.</h2>
+      <p>Have a question, an idea, or a kind word? Send me a message.</p>
+      <a class="contact-email" href="mailto:you@example.com">you@example.com</a>
+      <p class="social-links"><a href="https://github.com/">GitHub</a> / <a href="https://www.linkedin.com/">LinkedIn</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Your Name. Built while learning.</p>
+  </footer>
 </body>
 </html>

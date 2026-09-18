@@ -1,1 +1,305 @@
-/* Add you CSS here */
+/* These variables make the main colors easy to change. */
+:root {
+	--ink: #172126;
+	--paper: #f7f1df;
+	--blue: #2c6e91;
+	--yellow: #f2c84b;
+	--red: #d65b45;
+	--cream: #fffaf0;
+}
+
+/* This makes spacing and sizing easier to understand. */
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	color: var(--ink);
+	background-color: var(--paper);
+	font-family: Georgia, "Times New Roman", serif;
+	line-height: 1.6;
+}
+
+a {
+	color: inherit;
+}
+
+.site-header {
+	min-height: 620px;
+	background-color: var(--blue);
+	background-image: linear-gradient(135deg, transparent 0 65%, rgba(242, 200, 75, .9) 65% 71%, transparent 71%), linear-gradient(25deg, transparent 0 78%, rgba(214, 91, 69, .9) 78% 83%, transparent 83%);
+}
+
+.navigation {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 24px 7%;
+	color: var(--cream);
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 14px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.navigation a {
+	display: inline-block;
+	margin: 0 0 0 24px;
+	text-decoration: none;
+}
+
+.navigation a:hover,
+.navigation a:focus {
+	color: var(--yellow);
+}
+
+.navigation .logo {
+	margin-left: 0;
+	margin-right: 36px;
+	font-size: 22px;
+	font-weight: bold;
+	letter-spacing: 0;
+}
+
+.logo span {
+	color: var(--yellow);
+}
+
+.hero {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 120px 7% 100px;
+	color: var(--cream);
+}
+
+.eyebrow,
+.section-label,
+.project-number {
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.eyebrow {
+	color: var(--yellow);
+}
+
+h1,
+h2,
+h3,
+p {
+	margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+	line-height: 1.1;
+}
+
+h1 {
+	max-width: 760px;
+	margin-bottom: 24px;
+	font-size: 58px;
+	font-weight: normal;
+}
+
+h1 span {
+	color: var(--yellow);
+}
+
+.intro {
+	max-width: 540px;
+	margin-bottom: 34px;
+	font-size: 19px;
+}
+
+.button {
+	display: inline-block;
+	padding: 12px 20px;
+	background-color: var(--yellow);
+	color: var(--ink);
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.button:hover,
+.button:focus {
+	background-color: var(--cream);
+}
+
+.section {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 100px 7%;
+}
+
+.section-label {
+	margin-bottom: 22px;
+	color: var(--blue);
+}
+
+.section h2 {
+	margin-bottom: 22px;
+	font-size: 42px;
+	font-weight: normal;
+}
+
+.section-heading {
+	font-size: 20px;
+}
+
+.section-heading h2 {
+	display: inline-block;
+	width: 45%;
+	vertical-align: top;
+}
+
+.section-heading p {
+	display: inline-block;
+	width: 48%;
+	vertical-align: top;
+}
+
+.about-section {
+	border-bottom: 1px solid rgba(23, 33, 38, .2);
+}
+
+.projects-section {
+	background-color: var(--cream);
+}
+
+.project-list {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.project-card {
+	display: inline-block;
+	width: 31.5%;
+	min-height: 280px;
+	margin: 10px .6%;
+	padding: 28px;
+	vertical-align: top;
+}
+
+.project-blue {
+	background-color: var(--blue);
+	color: var(--cream);
+}
+
+.project-yellow {
+	background-color: var(--yellow);
+}
+
+.project-red {
+	background-color: var(--red);
+	color: var(--cream);
+}
+
+.project-number {
+	margin-bottom: 55px;
+}
+
+.project-card h3 {
+	font-size: 27px;
+	font-weight: normal;
+}
+
+.project-card a,
+.contact-email,
+.social-links a {
+	font-family: "Trebuchet MS", sans-serif;
+	font-weight: bold;
+}
+
+.skills-section {
+	background-color: var(--yellow);
+}
+
+.section-note {
+	max-width: 500px;
+	font-size: 18px;
+}
+
+.skills-list {
+	padding: 0;
+	list-style: none;
+}
+
+.skills-list li {
+	display: inline-block;
+	margin: 8px 8px 0 0;
+	padding: 10px 14px;
+	border: 2px solid var(--ink);
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 14px;
+}
+
+.contact-section {
+	text-align: center;
+}
+
+.contact-email {
+	display: inline-block;
+	margin: 15px 0;
+	color: var(--red);
+	font-size: 24px;
+}
+
+.social-links {
+	font-size: 14px;
+}
+
+footer {
+	padding: 24px 7%;
+	background-color: var(--ink);
+	color: var(--cream);
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 12px;
+	text-align: center;
+}
+
+/* On small screens, stack the navigation and project cards. */
+@media (max-width: 700px) {
+	.site-header {
+		min-height: 680px;
+	}
+
+	.navigation a {
+		margin: 8px 12px 0 0;
+	}
+
+	.navigation .logo {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	.hero {
+		padding-top: 80px;
+	}
+
+	h1 {
+		font-size: 42px;
+	}
+
+	.section-heading h2,
+	.section-heading p {
+		display: block;
+		width: 100%;
+	}
+
+	.project-card {
+		display: block;
+		width: auto;
+		margin: 18px 0;
+	}
+}
