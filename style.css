@@ -2,9 +2,9 @@
 :root {
 	--ink: #172126;
 	--paper: #f7f1df;
-	--blue: #2c6e91;
-	--yellow: #f2c84b;
-	--red: #d65b45;
+	--blue: #920000;
+	--yellow: #00a6ff;
+	--red: #045cb3;
 	--cream: #fffaf0;
 }
 
@@ -21,8 +21,8 @@ body {
 	margin: 0;
 	color: var(--ink);
 	background-color: var(--paper);
-	font-family: Georgia, "Times New Roman", serif;
-	line-height: 1.6;
+	font-family: Georgia, "PT serif", serif;
+	line-height: 1.5;
 }
 
 a {
